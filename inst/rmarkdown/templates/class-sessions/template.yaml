@@ -1,0 +1,4 @@
+name: class-sessions
+description: >
+ This is a Rmd templet use to write sessions.
+#create_dir: true
