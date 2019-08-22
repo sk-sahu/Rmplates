@@ -1,6 +1,6 @@
 # Rmplates
 
-R package contains collection of useful Rmd Templates
+R package contains collection of useful **Rm**d Te**mplates**
 
 ```
 require(devtools)
