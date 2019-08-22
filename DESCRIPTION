@@ -1,11 +1,14 @@
 Package: Rmplates
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Collection of Useful Rmd Templates
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Sangram Keshari Sahu
+Maintainer: Sangram Keshari Sahu <sangramsahu15@gmail.com>
+Description: Collection of Useful Rmd Templates for several usecases.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    rmarkdown
+RoxygenNote: 6.1.1
+Suggests: testthat
