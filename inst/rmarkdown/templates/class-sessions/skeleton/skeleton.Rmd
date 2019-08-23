@@ -1,5 +1,21 @@
 ---
 title: "session-x"
+author: "author name"
+date: '`r format(Sys.time(), "Last modified: %d %b %Y")`'
+output:
+  html_document:
+    includes:
+          before_body: before_body.html
+          #after_body: footer.html
+    css: sessions.css
+    theme: cerulean
+    highlight: tango
+    toc: true
+    number_sections: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+      #smooth_scroll: false
 ---
 
 ## Introduction
