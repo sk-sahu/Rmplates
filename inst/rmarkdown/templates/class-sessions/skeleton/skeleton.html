@@ -1266,6 +1266,96 @@ window.buildTabsets = function(tocID) {
 </script>
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
 <style type="text/css">
@@ -1297,7 +1387,8 @@ h6 {
 
 <style type="text/css">.showopt {
 background-color: #004c93;
-color: #FFFFFF; width: 100px;
+color: #FFFFFF;
+width: 100px;
 height: 20px;
 text-align: center;
 vertical-align: middle !important;
@@ -1313,14 +1404,35 @@ pre.plot {
 background-color: white !important;
 }
 
-.exercise { background-color:#B7F7FD; border-radius: 5px; padding: 20px;
-} blockquote {
+.exercise {
+background-color:#B7F7FD;
+border-radius: 5px;
+padding: 20px;
+}
+blockquote {
 padding: 10px 20px;
 margin: 0 0 20px;
 font-size: 14px;
 border-left: 5px solid #eee;
 background-color:#EBFC80;
-}</style>
+}
+.session-start {
+background-color:#b8ffcf;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+border-radius: 5px; 
+}
+.session-end {
+background-color:#c9d9ff;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+border-radius: 5px; 
+}
+</style>
 
 
 
@@ -1336,7 +1448,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1545,16 +1656,47 @@ $(document).ready(function() {
 
 <h1 class="title toc-ignore">session-x</h1>
 <h4 class="author">author name</h4>
-<h4 class="date">Last modified: 23 Aug 2019</h4>
+<h4 class="date">Last modified: 12 Sep 2019</h4>
 
 </div>
 
 
-<div id="introduction" class="section level2">
-<h2><span class="header-section-number">0.1</span> Introduction</h2>
+<div id="aim" class="section level3 session-start">
+<h3>Aim</h3>
+<ul>
+<li>aim-1</li>
+<li>aim-2</li>
+</ul>
 </div>
-<div id="aim" class="section level2">
-<h2><span class="header-section-number">0.2</span> Aim</h2>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Introduction paragraph comes here.</p>
+</div>
+<div id="example" class="section level1">
+<h1>Example</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># R code comes here.</span></a></code></pre></div>
+<p>More para.</p>
+<blockquote>
+<p>Highlighted Notes</p>
+</blockquote>
+</div>
+<div id="code-exercise-with-hide-code." class="section level1">
+<h1>Code Exercise with hide code.</h1>
+<div class="exercise fold s o">
+<p><strong>Exercise-1</strong></p>
+<p>Some program statement.</p>
+<p><strong>Solution</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># solution code</span></a></code></pre></div>
+</div>
+<p>More Writing.</p>
+<p>End.</p>
+<div id="key-points" class="section level3 session-end">
+<h3>Key Points</h3>
+<ul>
+<li>key point-1</li>
+<li>Key point-2</li>
+</ul>
+</div>
 </div>
 
 

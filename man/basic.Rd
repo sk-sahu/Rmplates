@@ -13,7 +13,7 @@ basic(filename = "new.Rmd")
 A basic Rmd templet.
 }
 \description{
-This function will create a basic Rmd file, which you can
+This function will create a basic Rmd file, which can
 be edited further.
 }
 \examples{

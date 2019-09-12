@@ -11,13 +11,51 @@ output:
     theme: cerulean
     highlight: tango
     toc: true
-    number_sections: true
+    number_sections: false  
     toc_depth: 2
     toc_float:
       collapsed: false
       #smooth_scroll: false
 ---
 
-## Introduction
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-## Aim
+### Aim { .session-start }
+* aim-1
+* aim-2
+
+# Introduction
+Introduction paragraph comes here.
+
+# Example
+```{r}
+# R code comes here.
+```
+
+More para.
+
+> Highlighted Notes
+
+# Exercise with hide code.
+
+<div class = "exercise fold s o">
+**Exercise-1**
+
+Some program statement.
+
+**Solution**
+
+```{r}
+# solution code
+```
+</div>
+
+More Writing.
+
+End. 
+
+### Key Points { .session-end }
+* key point-1
+* Key point-2

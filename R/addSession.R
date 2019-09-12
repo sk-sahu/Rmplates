@@ -1,17 +1,17 @@
-#' Basic templet
+#' Add Class-Session templet
 #'
-#' This function will create a basic Rmd file, which can
+#' This function will create a class-session Rmd file, which can
 #' be edited further.
 #'
 #' @param filename .Rmd file name want to be created. (Default: new.Rmd)
 #'
-#' @return A basic Rmd templet.
+#' @return A class-session Rmd templet.
 #'
 #' @examples
-#' basic("new.Rmd")
+#' addSession("new_session.Rmd")
 #'
 #' @export
-basic <- function(filename = "new.Rmd") {
+addSession <- function(filename = "session.Rmd") {
   if (file.exists(filename)) {
     message(filename, " already present.")
   }

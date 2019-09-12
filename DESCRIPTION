@@ -8,7 +8,7 @@ Description: Collection of Useful Rmd Templates for several usecases.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: utils, rmarkdown, knitr, yaml
+Imports: utils, rmarkdown, knitr, yaml, spatial
 RoxygenNote: 6.1.1
 Suggests: testthat
 URL: https://github.com/sk-sahu/Rmplates
