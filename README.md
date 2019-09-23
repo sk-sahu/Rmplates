@@ -1,4 +1,5 @@
 # Rmplates
+[![Build Status](https://travis-ci.org/sk-sahu/Rmplates.svg?branch=master)](https://travis-ci.org/sk-sahu/Rmplates)
 
 R package contains collection of useful **Rm**d Te**mplates**
 
